@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Zelfstarters</title>
-<meta name="description" content="Vergroot je kans op de opdracht en de verlenging. Zelfstarters is de club van adviseurs, projectleiders, interim managers en andere zelfstandige professionals die laten zien dat ze het oppakken.">
+<title>Zelfstarters · De ontwikkelstructuur voor zelfstandige professionals</title>
+<meta name="description" content="Zelfstarters is de ontwikkelstructuur voor zelfstandige professionals: elk jaar meten, werken aan de momenten die ertoe doen, en laten zien dat je groeit. Het Zelfstartregister is het bewijs.">
 <link rel="icon" type="image/png" href="/icoon-256.png">
 <link rel="apple-touch-icon" href="/icoon-256.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zelfstarters.nl/">
-<meta property="og:title" content="Zelfstarters · Vergroot je kans">
-<meta property="og:description" content="Een cv zegt wat je hebt gedaan. Het Zelfstartregister zegt hoe je het doet als het eropaankomt. Voor zelfstandige professionals.">
+<meta property="og:title" content="Je verdient de voorkeur. Laat dat zien.">
+<meta property="og:description" content="Een cv zegt wat je hebt gedaan. Niet hoe je het doet als het eropaankomt. De ontwikkelstructuur voor zelfstandige professionals, met het Zelfstartregister als bewijs.">
 <meta property="og:image" content="https://zelfstarters.nl/deelbeeld.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -99,24 +99,40 @@ details p{color:var(--muted);margin-top:8px}
 footer{padding:40px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 @media(max-width:860px){.hero,.adas,.rules,.prices,.club{grid-template-columns:1fr}nav{display:none}.hero,.club{padding:40px 24px}}
 </style>
-</head>
 <body>
+<style>
+nav{white-space:nowrap}
+.brand small{max-width:360px}
+.price.hi:before{display:none}
+.two{align-items:start}
+.hero h1{font-size:clamp(2.2rem,4.4vw,3.5rem)}
+.stap{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:34px}
+.stap div{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px 18px;position:relative}
+.stap div.gratis{border-color:var(--navy)}
+.stap .n{font-family:Outfit,sans-serif;font-weight:800;color:var(--orange);font-size:1.6rem;line-height:1;margin-bottom:8px}
+.stap h3{font-size:1.05rem;margin-bottom:6px}
+.stap p{font-size:.88rem;color:var(--muted);margin:0}
+.stap .tag{position:absolute;top:-11px;right:14px;background:var(--navy);color:#fff;font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.05em}
+.jaar{font-family:Outfit,sans-serif;font-weight:700;color:var(--navy);letter-spacing:.08em;margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;max-width:900px;margin-top:30px}
+@media(max-width:860px){.stap{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+@media(max-width:480px){.stap{grid-template-columns:1fr}}
+</style>
 <div class="wrap">
 <header>
   <a class="brand" href="#">
     <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0f1f3d"/><circle cx="20" cy="20" r="13" fill="#fff"/><circle cx="20" cy="20" r="8" fill="#ff6a2b"/><circle cx="20" cy="20" r="3" fill="#fff"/></svg>
-    <span>Zelfstarters<small>Zelfstartregister voor zelfstandige professionals</small></span>
+    <span>Zelfstarters<small>De ontwikkelstructuur voor zelfstandige professionals</small></span>
   </a>
-  <nav><a href="#register">Het register</a><a href="#lid">Registreren</a><a href="#check">Controleer</a><a href="#hoe">Hoe het werkt</a><a href="#over">Over ons</a><a href="#vragen">Vragen</a><a class="btn" href="#lid" style="padding:10px 18px;font-size:.95rem;margin-left:24px">Registreer</a></nav>
+  <nav><a href="#structuur">De structuur</a><a href="#register">Het register</a><a href="#check">Controleer</a><a href="/manifest">Manifest</a><a href="#vragen">Vragen</a><a class="btn" href="#start" style="padding:10px 18px;font-size:.95rem;margin-left:24px">Registreer gratis</a></nav>
 </header>
 
 <section class="hero" style="padding-top:60px">
   <div>
     <span class="kicker">Voor zelfstandige professionals</span>
-    <h1>Vergroot je kans.</h1>
-    <p class="lead">Op de opdracht. Op de verlenging. Op de volgende. Een cv zegt wat je hebt gedaan. Het Zelfstartregister zegt hoe je het doet als het eropaankomt. Voor adviseurs, projectleiders, interim managers en andere zelfstandige professionals.</p>
-    <p class="lead" style="color:#fff;font-weight:700">Eén uur eerder aan de slag, en je registratie is terugverdiend.</p>
-    <a class="btn" href="#lid">Registreer en meet vandaag</a>
+    <h1>Je verdient de voorkeur.<br><span style="color:var(--orange)">Laat dat zien.</span></h1>
+    <p class="lead">Een cv zegt wat je hebt gedaan. Niet hoe je het doet als het eropaankomt. Zelfstarters is de ontwikkelstructuur voor zelfstandige professionals: elk jaar meten, werken aan de momenten die ertoe doen, en laten zien dat je groeit. Het Zelfstartregister is daar het bewijs van.</p>
+    <a class="btn" href="#start">Registreer je gratis</a>
     <a class="btn ghost" href="#check" style="margin:10px 0 0 10px">Controleer een registratie</a>
   </div>
   <svg class="target" viewBox="0 0 460 460" aria-label="Een groot doel dat ademt">
@@ -131,57 +147,86 @@ footer{padding:40px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
   </svg>
 </section>
 
-<section id="register">
+<section>
   <div class="club">
     <div>
-      <h2>Het Zelfstartregister</h2>
-      <p>Opdrachtgevers kiezen na het cv op één vraag: pakt deze persoon het op? Het Zelfstartregister geeft daar het antwoord op. Wie erin staat, heeft het laten meten. Niet beloofd, gemeten.</p>
-      <p>Je staat erin met naam, nummer en badge. Elke opdrachtgever kan in één klik zien dat je registratie geldig is. Wat hij verder ziet, bepaal jij.</p>
+      <h2>Het jaargesprek dat je als zelfstandige niet hebt</h2>
+      <p>Wie in loondienst werkt, heeft een jaargesprek, een ontwikkelbudget en een leidinggevende die ziet of je groeit. Wie zelfstandig werkt, heeft niets van dat alles. In het beroep waar ontwikkeling het hardst telt, omdat je elke zes maanden opnieuw gekozen moet worden.</p>
+      <p>Een miljoen professionals zonder ontwikkelstructuur. Dit is die structuur. Eén keer per jaar meten, een plan voor de momenten die ertoe doen, en de vraag die niemand anders je stelt: ben je gegroeid?</p>
     </div>
     <div class="stats">
-      <div><div class="stat">ZS</div><small>elk nummer begint met ZS en het jaar van inschrijving</small></div>
-      <div><div class="stat">1x</div><small>per jaar een hermeting, zo blijft je badge geldig</small></div>
-      <div><div class="stat">+</div><small>de plus staat erin zodra de Plus Class is gedaan</small></div>
-      <div><div class="stat">jij</div><small>bepaalt wat een opdrachtgever ziet</small></div>
+      <div><div class="stat">1x</div><small>per jaar meten, tien minuten, op eigenaarschap, initiatief en daadkracht</small></div>
+      <div><div class="stat">2</div><small>ontwikkelpunten per jaar, met een als-dan plan voor de momenten die ertoe doen</small></div>
+      <div><div class="stat">0</div><small>cijfers over jou naar buiten. Je score is van jou; zichtbaar is dat je meet en groeit</small></div>
+      <div><div class="stat">ZS</div><small>je registratienummer, met de jaartallen waarin je hebt gemeten</small></div>
     </div>
   </div>
 </section>
 
-<section id="lid">
-  <h2>Registreer nu, meet vandaag</h2>
-  <p class="muted" style="max-width:640px">Je registratie gaat direct in. Je doet vandaag je nulmeting, je hebt morgen je registratienummer en badge in je mail, en je telt mee in de eerste Zelfstarter Index. Het founding-tarief geldt tot 31 december 2026.</p>
-  <p style="max-width:640px;font-family:Outfit,sans-serif;font-weight:700;font-size:1.15rem;color:var(--navy)">Eén uur eerder aan de slag op je volgende opdracht, en je registratie is terugverdiend.</p>
-  <div class="prices" style="margin-top:30px;grid-template-columns:1fr 1fr;max-width:760px">
-    <div class="price">
-      <svg width="64" height="64" viewBox="0 0 100 100" style="margin:0 auto 8px"><circle cx="50" cy="50" r="48" fill="#0f1f3d"/><circle cx="50" cy="50" r="36" fill="#fff"/><circle cx="50" cy="50" r="25" fill="#ff6a2b"/><circle cx="50" cy="50" r="13" fill="#fff"/><circle cx="50" cy="50" r="5" fill="#0f1f3d"/></svg>
-      <h3>Standaard</h3><div class="amt">€ 79</div><div class="per">per jaar, excl. btw<br>+ € 16,59 btw = € 95,59<br>founding-tarief tot 31 december, daarna € 119 excl. btw</div>
-      <ul><li>Vandaag: Zelfkracht Scan, duiding en je nulmeting</li><li>Morgen: je registratienummer en badge in je mail</li><li>Als-dan plan op twee ontwikkelpunten, met herinneringen op de momenten die ertoe doen</li><li>Jaarlijkse hermeting en groeiscore</li><li>Je staat in de Zelfstarter Index 2026</li></ul>
-      <a class="btn" href="https://scan.happly.nl/zelfstarters?type=standaard">Registreer en start</a>
+<section id="structuur">
+  <h2>De ontwikkelstructuur, één jaar lang</h2>
+  <p class="muted" style="max-width:640px">Zes stappen die elk jaar terugkomen. De eerste twee zijn gratis, voor iedereen die zelfstandig werkt.</p>
+  <div class="stap">
+    <div class="gratis"><span class="tag">Gratis</span><div class="n">1</div><h3>Meten</h3><p>De Zelfkracht Scan, tien minuten, vandaag. Langs Zien, Sturen en Doen.</p></div>
+    <div class="gratis"><span class="tag">Gratis</span><div class="n">2</div><h3>Weten</h3><p>Je sterkste kant en je twee ontwikkelpunten, in gewone taal. Plus je nummer in het register.</p></div>
+    <div><div class="n">3</div><h3>Plannen</h3><p>Je als-dan plan: wat doe je in het eerste gesprek, de eerste honderd dagen, de evaluatie, de verlenging.</p></div>
+    <div><div class="n">4</div><h3>Doen</h3><p>Op die momenten een herinnering aan je plan, zodat je doet wat je je had voorgenomen.</p></div>
+    <div><div class="n">5</div><h3>Groeien</h3><p>Na een jaar de hermeting. Je groei krijgt een naam: In beweging, Groeier of Sprong.</p></div>
+    <div><div class="n">6</div><h3>Laten zien</h3><p>Je badge met jaartallen en groeiniveau, controleerbaar door elke opdrachtgever.</p></div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="adas">
+    <div>
+      <h2>Het Zelfstartregister is het bewijs</h2>
+      <p class="muted">Opdrachtgevers kiezen na het cv op één vraag: pakt deze persoon het op? Het register geeft daar antwoord op. Niet met een cijfer, maar met wat telt: dat je je laat meten, sinds wanneer, en dat je groeit.</p>
+      <p class="muted">Wie zich laat meten, staat erin. Wie zijn jaar in de ontwikkelstructuur doet, is geverifieerd en draagt het jaartal op zijn badge. Je score ziet alleen jij, en wie jij hem laat zien.</p>
+      <p style="font-family:Outfit,sans-serif;font-weight:700;font-size:1.25rem;color:var(--navy)">Wij publiceren geen cijfers over mensen. Wij laten zien wie werkt aan zichzelf.</p>
     </div>
-    <div class="price hi">
-      <svg width="64" height="64" viewBox="0 0 100 100" style="margin:0 auto 8px"><circle cx="50" cy="50" r="48" fill="#0f1f3d"/><circle cx="50" cy="50" r="36" fill="#fff"/><circle cx="50" cy="50" r="25" fill="#ff6a2b"/><circle cx="50" cy="50" r="13" fill="#fff"/><circle cx="50" cy="50" r="5" fill="#0f1f3d"/><circle cx="82" cy="18" r="17" fill="#ff6a2b" stroke="#fff" stroke-width="4"/><rect x="79" y="8" width="6" height="20" rx="2" fill="#fff"/><rect x="72" y="15" width="20" height="6" rx="2" fill="#fff"/></svg>
-      <h3>Plus Class</h3><div class="amt">€ 299</div><div class="per">eerste jaar, excl. btw<br>+ € 62,79 btw = € 361,79<br>founding-tarief tot 31 december, daarna € 349 excl. btw</div>
-      <ul><li>Alles uit Standaard, vandaag al</li><li>Een dag live met je Plus Class in Zaltbommel: je profiel vertaald naar je pitch, je als-dan plan onder begeleiding, je eerste honderd dagen uitgewerkt</li><li>Na die dag: de plus op je badge en certificaat</li><li>Voorrang bij partners</li></ul>
-      <div style="text-align:left;font-size:.88rem;margin:4px 0 16px;border-top:1px solid var(--line);padding-top:12px">
-        <div style="font-weight:700;margin-bottom:6px">Data</div>
-        <div class="muted" style="text-decoration:line-through">vr 11 dec · vr 18 dec · vr 8 jan</div>
-        <div><b>vr 15 jan</b> · Zaltbommel · plaatsen beschikbaar</div>
-        <div><b>za 16 jan</b> · Zaltbommel · plaatsen beschikbaar</div>
-        <div><b>vr 22 jan</b> · Zaltbommel · plaatsen beschikbaar</div>
-        <div><b>za 23 jan</b> · Zaltbommel · plaatsen beschikbaar</div>
-        <div class="muted" style="margin-top:6px">Je kiest je dag na registratie.</div>
+    <div class="profile">
+      <div class="label">Wat een opdrachtgever ziet · voorbeeld</div>
+      <div class="name" style="margin-top:6px">Sanne de Vries</div>
+      <div class="label">Projectleider publieke sector · ZS-2026-00417</div>
+      <div style="display:flex;align-items:center;gap:18px;margin:18px 0 6px">
+        <svg width="92" height="92" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#0f1f3d"/><circle cx="50" cy="50" r="36" fill="#fff"/><circle cx="50" cy="50" r="25" fill="#ff6a2b"/><circle cx="50" cy="50" r="13" fill="#fff"/><circle cx="50" cy="50" r="5" fill="#0f1f3d"/><circle cx="82" cy="18" r="17" fill="#ff6a2b" stroke="#fff" stroke-width="4"/><rect x="79" y="8" width="6" height="20" rx="2" fill="#fff"/><rect x="72" y="15" width="20" height="6" rx="2" fill="#fff"/></svg>
+        <div>
+          <div class="stamp" style="margin:0">● Geverifieerd · Plus</div>
+          <div class="jaar">2026 · 2027 · 2028</div>
+          <span class="tier">Groeier</span>
+        </div>
       </div>
-      <a class="btn" href="https://scan.happly.nl/zelfstarters?type=plus">Registreer voor de Plus Class</a>
+      <p class="muted" style="font-size:.88rem;margin:12px 0 0">Drie jaar gemeten, Plus Class gevolgd, gegroeid sinds de eerste meting. Geen score, geen ringen, geen vergelijking met anderen. Wil je meer weten, dan vraag je het Sanne: zij deelt haar uitslag met een link die ze zelf beheert.</p>
     </div>
   </div>
-  <p class="muted" style="margin-top:18px;max-width:640px">Wie voor 31 december meet, draagt 2026 als eerste jaartal op zijn badge. Dat jaartal is er later niet meer. Elke Plus Class heeft een vast aantal plekken; is jouw dag vol, dan kies je een andere.</p>
+</section>
+
+<section id="start">
+  <h2>Registreer gratis. Doe je jaar als je wilt.</h2>
+  <p class="muted" style="max-width:640px">Registreren kost niets en vraagt alleen je eerste meting. Je jaar in de ontwikkelstructuur maakt je geverifieerd. Eén uur eerder aan de slag op je volgende opdracht, en dat jaar is terugverdiend.</p>
+  <div class="two">
+    <div class="price">
+      <h3>Geregistreerd</h3><div class="amt">Gratis</div><div class="per">voor iedereen die zelfstandig werkt</div>
+      <ul><li>Je eerste meting, vandaag, tien minuten</li><li>Je sterkste kant en je twee ontwikkelpunten</li><li>Je registratienummer in het Zelfstartregister</li><li>Je telt mee in de Zelfstarter Index</li></ul>
+      <a class="btn" href="https://scan.happly.nl/zelfstarters">Registreer je gratis</a>
+    </div>
+    <div class="price hi">
+      <h3>Je jaar in de ontwikkelstructuur</h3><div class="amt">€ 79</div><div class="per">per jaar, excl. btw · + € 16,59 btw = € 95,59<br>founding-tarief tot 31 december, daarna € 119 excl. btw</div>
+      <ul><li>Geverifieerd: badge met jaartal, controleerbaar door elke opdrachtgever</li><li>De volledige duiding van je ontwikkelpunten</li><li>Je als-dan plan, met herinneringen op de momenten die ertoe doen</li><li>Je hermeting na een jaar, met je groeiniveau op de badge</li><li>Delen van je uitslag met een opdrachtgever, per link, intrekbaar</li></ul>
+      <div style="text-align:left;font-size:.9rem;margin:4px 0 16px;border-top:1px solid var(--line);padding-top:12px">
+        <b>Plus Class</b>, € 299 eerste jaar excl. btw. Je jaar, plus een dag live in Zaltbommel met een gedragsexpert en een kleine groep vakgenoten. Je ontwikkelpunten worden je persoonlijke ontwikkelplan: welk gedrag op welk moment, hoe je dat vasthoudt, en hoe je het in een gesprek met een opdrachtgever vertelt. Daarna de plus op je badge, en bij de hermeting zie je of het heeft gewerkt. Data in januari, je kiest je dag na je meting.
+      </div>
+      <a class="btn" href="https://scan.happly.nl/zelfstarters">Begin met je gratis meting</a>
+    </div>
+  </div>
+  <p class="muted" style="margin-top:18px;max-width:640px">Je kiest je jaar na je eerste meting, op je uitslagpagina. Wie voor 31 december geverifieerd is, draagt 2026 als eerste jaartal. Dat jaartal is er later niet meer.</p>
 </section>
 
 <section id="check">
   <div class="adas">
     <div>
       <h2>Voor opdrachtgevers: controleer een registratie</h2>
-      <p class="muted">Elke badge is een link. Klik erop, of voer hieronder naam of registratienummer in. Je ziet direct of de registratie geldig is, Standaard of Plus, sinds wanneer, en wanneer de laatste hermeting was. Geen score: die deelt de professional zelf met je.</p>
+      <p class="muted">Elke badge is een link. Klik erop, of voer hieronder het registratienummer in. Je ziet of de registratie geverifieerd is, de jaartallen, de plus en het groeiniveau. Geen score: die deelt de professional zelf met je, als hij dat wil.</p>
       <form id="checkform" style="display:flex;gap:10px;max-width:460px;margin-top:10px">
         <input type="text" id="checkq" placeholder="Nummer, bijv. ZS-2026-00123" style="flex:1;padding:14px 16px;border:2px solid var(--line);border-radius:14px;font:inherit;font-size:1rem">
         <button class="btn" style="border:0;cursor:pointer" type="submit">Controleer</button>
@@ -196,8 +241,9 @@ footer{padding:40px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
           const r = await fetch("https://scan.happly.nl/api/zelfstarters-check?q=" + encodeURIComponent(q));
           const d = await r.json();
           if (!d.gevonden){ uit.textContent = "Geen registratie gevonden. Controleer het nummer of de exacte naam."; return; }
-          const kleur = d.geldig ? "var(--navy)" : "#b23b0a";
-          uit.innerHTML = '<b style="color:' + kleur + '">' + (d.geldig ? "Geldige registratie" : (d.toestand === "verlopen" ? "Registratie verlopen" : "Wacht op de eerste meting")) + '</b> · ' + d.nummer + (d.naam ? " · " + d.naam : "") + " · " + (d.plus ? "Plus" : "Standaard") + " · sinds " + d.sinds + (d.laatste_meting ? " · laatste meting " + d.laatste_meting : "") + ' · <a href="' + d.pagina + '" style="color:var(--navy)">bekijk</a>';
+          const kop = d.toestand === "geldig" ? "Geverifieerd" : d.toestand === "geregistreerd" ? "Geregistreerd, nog niet geverifieerd" : d.toestand === "niet actief" ? "Niet actief" : "Wacht op de eerste meting";
+          const kleur = d.geldig ? "var(--navy)" : (d.toestand === "geregistreerd" ? "var(--muted)" : "#b23b0a");
+          uit.innerHTML = '<b style="color:' + kleur + '">' + kop + '</b> · ' + d.nummer + (d.naam ? " · " + d.naam : "") + (d.plus ? " · Plus" : "") + (d.meetjaren && d.meetjaren.length ? " · " + d.meetjaren.join(" · ") : "") + ' · <a href="' + d.pagina + '" style="color:var(--navy)">bekijk</a>';
         }catch(err){ uit.textContent = "De controle is even niet bereikbaar. Probeer het zo nog eens."; }
       });
       </script>
@@ -205,109 +251,52 @@ footer{padding:40px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
     <div class="card" style="background:var(--white);border:1px solid var(--line)">
       <h3>Drie niveaus van inzage</h3>
       <table style="border-collapse:collapse;width:100%;font-size:.93rem">
-        <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Openbaar</b></td><td style="padding:8px 0;border-bottom:1px solid var(--line)" class="muted">Geldig ja of nee, Standaard of Plus, sinds wanneer, laatste hermeting. Voor iedereen.</td></tr>
-        <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Gedeeld</b></td><td style="padding:8px 0;border-bottom:1px solid var(--line)" class="muted">Score, drie ringen, groeiscore en certificaat. Alleen via een link die de professional jou geeft, per opdrachtgever, intrekbaar.</td></tr>
-        <tr><td style="padding:8px 0"><b>Teammatch</b></td><td style="padding:8px 0" class="muted">Past deze professional in jouw team, onder jouw leiding. Op verzoek, met instemming, uitgevoerd door een Practitioner.</td></tr>
+        <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Openbaar</b></td><td style="padding:8px 0;border-bottom:1px solid var(--line)" class="muted">Geregistreerd of geverifieerd, jaartallen, plus, groeiniveau. Naam alleen met toestemming.</td></tr>
+        <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Gedeeld</b></td><td style="padding:8px 0;border-bottom:1px solid var(--line)" class="muted">Uitslag, ringen en groei. Alleen via een link die de professional jou geeft, intrekbaar.</td></tr>
+        <tr><td style="padding:8px 0"><b>Teammatch</b></td><td style="padding:8px 0" class="muted">Past deze professional in jouw team, onder jouw leiding. Op verzoek, met instemming.</td></tr>
       </table>
-      <p class="muted" style="font-size:.85rem;margin-top:12px">Nooit zichtbaar, voor niemand: de antwoorden op de scan, de duiding van valkuilen en de vergelijking met andere geregistreerden.</p>
+      <p class="muted" style="font-size:.85rem;margin-top:12px">Hoe wij hiermee omgaan staat vast in het <a href="/reglement" style="color:var(--navy);font-weight:600">reglement</a>.</p>
     </div>
-  </div>
-</section>
-
-<section style="padding:30px 0;text-align:center;border:0">
-  <a class="btn" href="#lid">Registreer en meet vandaag</a>
-  <div class="muted" style="margin-top:10px;font-size:.9rem">Standaard € 79 per jaar excl. btw (€ 95,59 incl.) · founding-tarief tot 31 december</div>
-</section>
-
-<section id="hoe">
-  <h2>Drie ringen</h2>
-  <p class="muted" style="max-width:620px">Drie stappen, elk maakt je kans groter.</p>
-  <div class="rules" style="margin-top:34px">
-    <div class="rule"><div class="n">1</div><h3>Je kent je kracht</h3><p class="muted">De Zelfkracht Scan, tien minuten. Je ziet waar je sterk bent en waar je kansen laat liggen, langs Zien, Sturen en Doen. In gewone taal, met twee punten om aan te werken.</p></div>
-    <div class="rule"><div class="n">2</div><h3>Je weet wat je doet</h3><p class="muted">Een als-dan plan voor de momenten die ertoe doen: het eerste gesprek, de eerste honderd dagen, de evaluatie, het verlengingsgesprek. Je krijgt op die momenten een herinnering aan je plan, zodat je doet wat je je had voorgenomen.</p></div>
-    <div class="rule"><div class="n">3</div><h3>Je laat het zien</h3><p class="muted">Je inschrijving in het Zelfstartregister, met badge voor LinkedIn, cv en e-mailhandtekening. Elk jaar een hermeting, zodat je groei zichtbaar wordt en je badge geldig blijft.</p></div>
   </div>
 </section>
 
 <section>
-  <div class="adas">
-    <div class="profile">
-      <div class="name">Sanne de Vries</div>
-      <div class="label">Projectleider publieke sector · ZS-2026-00417 · voorbeeld na drie metingen</div>
-      <div class="groei">
-        <div><div class="big">+11</div><span class="label">Groei sinds eerste meting</span></div>
-        <div><div class="sm">78</div><span class="label">Zelfkracht-score nu</span></div>
-      </div>
-      <div class="groeilijn">
-        <i style="height:60%"><span>67</span></i>
-        <i style="height:78%"><span>73</span></i>
-        <i class="on" style="height:100%"><span>78</span></i>
-      </div>
-      <div class="label">2026 · 2027 · 2028</div>
-      <div style="margin-top:14px">
-        <div class="bar"><span>Zien</span><span class="t"><i style="width:82%"></i></span><span>82<em class="delta">+3</em></span></div>
-        <div class="bar"><span>Sturen</span><span class="t"><i style="width:71%"></i></span><span>71<em class="delta">+14</em></span></div>
-        <div class="bar"><span>Doen</span><span class="t"><i style="width:80%"></i></span><span>80<em class="delta">+5</em></span></div>
-      </div>
-      <span class="tier">Sprong op Sturen</span>
-      <div class="stamp">● Geregistreerd en geverifieerd</div>
-    </div>
+  <div class="club" style="grid-template-columns:1fr">
     <div>
-      <h2>Je groei telt zwaarder dan je score</h2>
-      <p class="muted">Een score zegt waar je staat. Je groei zegt dat je er iets mee doet. Daarom is de groeiscore het grootste getal op elke inschrijving: het verschil tussen je eerste meting en nu, per ring en in totaal.</p>
-      <div class="card">
-        <ol>
-          <li><b>Groei is eerlijk.</b> Een hoge score kun je meebrengen. Groei moet je laten zien, meting na meting.</li>
-          <li><b>Groei wijst de weg.</b> De ring met de grootste sprong is wat werkte. De ring die achterblijft is je volgende doel, met een workshop of training die daarbij past.</li>
-          <li><b>Groei overtuigt.</b> Een opdrachtgever die +11 ziet, weet dat je het oppakt, ook op de momenten die ertoe doen.</li>
-        </ol>
-      </div>
+      <span class="kicker">Manifest</span>
+      <h2>Zelfstandig zijn is meer dan een rechtsvorm. Het is gedrag.</h2>
+      <p style="max-width:720px">Nederland voert over zelfstandigen één debat: echt zelfstandig of verkapt in loondienst. Dat debat gaat over contracten. Het gaat nooit over het enige wat voor een opdrachtgever telt: eigenaarschap nemen, initiatief tonen en doen wat je zei. Dat is gedrag, en gedrag kun je meten, ontwikkelen en laten zien.</p>
+      <a class="btn" href="/manifest">Lees het manifest</a>
     </div>
   </div>
-</section>
-
-<section id="groei">
-  <h2>Zo werkt de groeiscore</h2>
-  <p class="muted" style="max-width:640px">Elke meting levert een Zelfkracht-score op Zien, Sturen en Doen. De groeiscore is het verschil met je eerste meting. Drie niveaus, met een vaste naam, zodat iedereen weet wat een getal betekent.</p>
-  <div class="rules" style="margin-top:34px">
-    <div class="rule"><div class="n">+1 tot +4</div><h3>In beweging</h3><p class="muted">Je bent begonnen en het is zichtbaar. De meeste geregistreerden staan hier na hun eerste hermeting.</p></div>
-    <div class="rule"><div class="n">+5 tot +9</div><h3>Groeier</h3><p class="muted">Je als-dan plan werkt. Dit is het niveau waarop opdrachtgevers je groeilijn gaan noemen in het gesprek.</p></div>
-    <div class="rule"><div class="n">+10 en meer</div><h3>Sprong</h3><p class="muted">Op een ring of in totaal. Een sprong krijgt een eigen vermelding in het register en in de jaarlijkse Zelfstarter Index.</p></div>
-  </div>
-  <p class="muted" style="margin-top:22px;max-width:640px">Blijft een ring achter? Dan is dat je volgende doel. Dan past een training of Plus Class precies daarop. Na de volgende meting zie je of het werkte.</p>
-</section>
-
-<section style="padding:30px 0;text-align:center;border:0">
-  <a class="btn" href="#lid">Registreer en meet vandaag</a>
-  <div class="muted" style="margin-top:10px;font-size:.9rem">Standaard € 79 per jaar excl. btw (€ 95,59 incl.) · founding-tarief tot 31 december</div>
 </section>
 
 <section id="over">
   <div class="adas">
     <div>
       <h2>Over ons</h2>
-      <p class="muted">Zelfstarters is het Zelfstartregister voor zelfstandige professionals. Opgericht in 2026 door Happly, technologiebedrijf in behavior intelligence, op initiatief van <a href="https://www.linkedin.com/in/maartenneeskens" style="color:var(--navy);font-weight:600">Maarten Neeskens</a>, ruim dertig jaar ondernemer en gedragsexpert.</p>
-      <p class="muted">Wij meten de beslisfactoren die niet op een cv staan: eigenaarschap, initiatief en daadkracht. Kortom, hoe iemand het oppakt en volhoudt als het eropaankomt. Jaarlijks, met een instrument gebouwd op decennia gedragswetenschap, en met partners uit de markt voor zelfstandige professionals.</p>
+      <p class="muted">Zelfstarters is de ontwikkelstructuur voor zelfstandige professionals, met het Zelfstartregister als bewijs. Opgericht in 2026 op initiatief van <a href="https://www.linkedin.com/in/maartenneeskens" style="color:var(--navy);font-weight:600">Maarten Neeskens</a>, ruim dertig jaar ondernemer en gedragsexpert, en gebouwd door Happly, technologiebedrijf in behavior intelligence.</p>
+      <p class="muted">Wij meten de beslisfactoren die niet op een cv staan: eigenaarschap, initiatief en daadkracht. Jaarlijks, met een instrument gebouwd op decennia gedragswetenschap, en met partners uit de markt voor zelfstandige professionals.</p>
       <p style="font-family:Outfit,sans-serif;font-weight:700;font-size:1.25rem;color:var(--navy)">Wij bemiddelen niet. Wij maken gedrag zichtbaar.</p>
     </div>
     <div class="card">
       <h3>Zelfstarter Index 2026</h3>
-      <p class="muted">Jaarlijks publiceert het register hoe de Nederlandse zelfstandige professional het doet als het eropaankomt, per vakgebied, sector en rechtsvorm. De eerste Index verschijnt in maart 2027. Wie voor 31 december registreert, telt mee.</p>
-      <a class="btn ghost" href="#lid">Registreer en meet vandaag</a>
+      <p class="muted">Jaarlijks publiceert het register hoe de Nederlandse zelfstandige professional het doet als het eropaankomt, per vakgebied, sector en rechtsvorm. Altijd over groepen, nooit over personen. De eerste Index verschijnt in maart 2027. Wie voor 31 december meet, telt mee.</p>
+      <a class="btn ghost" href="#start">Registreer je gratis</a>
     </div>
   </div>
 </section>
 
 <section id="vragen">
   <h2>Vragen</h2>
-  <details><summary>Vergroot dit echt mijn kans?</summary><p>Ja. Opdrachtgevers kiezen na het cv op één vraag: pakt deze persoon het op? Een geverifieerd profiel met groeilijn beantwoordt die vraag vóór het gesprek. En je als-dan plan zorgt dat je het in de eerste honderd dagen ook laat zien.</p></details>
-  <details><summary>Wat als ik onder de drempel scoor?</summary><p>Dan ben je nog geen zelfstarter, maar je krijgt een route: twee ontwikkelpunten, een als-dan plan en Zetjes. Bij de volgende meting kun je het label alsnog halen.</p></details>
-  <details><summary>Wat kan een opdrachtgever van mij zien?</summary><p>Openbaar alleen dat je registratie geldig is, Standaard of Plus, sinds wanneer en wanneer je laatste hermeting was. Je score, ringen en groeiscore zie je zelf en deel je per opdrachtgever via een link die je kunt intrekken. De antwoorden op de scan en de duiding van je valkuilen ziet niemand anders dan jij.</p></details>
-  <details><summary>Wat gebeurt er als ik geen hermeting doe?</summary><p>Dan verloopt je registratie na twaalf maanden. Je badge vervaagt en bij controle staat "verlopen". Doe je alsnog een hermeting, dan is ze weer geldig; het gat blijft zichtbaar in je jaartallen.</p></details>
-  <details><summary>Hoe word ik aan mijn als-dan plan herinnerd?</summary><p>Via Zetjes, korte berichten op je telefoon op de momenten die ertoe doen in je opdracht. Zit in elke registratie, elk moment te pauzeren. Je stelt het in na je eerste meting.</p></details>
+  <details><summary>Wat kost registreren?</summary><p>Niets. Je doet je eerste meting en je staat in het register met je nummer. Je jaar in de ontwikkelstructuur, met verificatie, plan, herinneringen en hermeting, kost 79 euro per jaar excl. btw.</p></details>
+  <details><summary>Komt mijn score ergens te staan?</summary><p>Nee. Niet op je badge, niet op de controlepagina, niet bij partners en niet in de Index. Zichtbaar is dat je meet, sinds wanneer, en je groeiniveau in woorden als je dat hebt gehaald. Je score deel je alleen zelf, met een link die je kunt intrekken.</p></details>
+  <details><summary>Wat als ik laag scoor?</summary><p>Dan weet jij dat, en niemand anders. Je krijgt je twee ontwikkelpunten en, in je jaar, een plan en herinneringen om eraan te werken. Groei kan iedereen halen, waar je ook begint, en groei is wat het register laat zien.</p></details>
+  <details><summary>Wat gebeurt er als ik geen hermeting doe?</summary><p>Dan staat je registratie na twaalf maanden op niet actief. Doe je alsnog een meting, dan is ze weer actief; het ontbrekende jaar blijft zichtbaar in je jaartallen.</p></details>
+  <details><summary>Hoe word ik aan mijn als-dan plan herinnerd?</summary><p>Via Zetjes, korte berichten op je telefoon op de momenten die ertoe doen in je opdracht. Zit in je jaar, elk moment te pauzeren.</p></details>
   <details><summary>Is de scan wetenschappelijk?</summary><p>De Zelfkracht Scan meet gedragsmarkers voor regie, eigenaarschap en bijdrage, gebouwd op het werk van onder anderen Bandura, Deci en Ryan en Dweck. Zetjes gebruikt wetenschappelijk bewezen gedragstechnieken.</p></details>
-  <details><summary>Voor bureaus en platforms</summary><p>Partners nemen het register op in hun dossier of voordracht: controle van de registratie bij elke kandidaat, het gedeelde profiel met toestemming van de professional, en een eigen cijfer in de jaarlijkse Zelfstarter Index. Mail naar partners@zelfstarters.nl.</p></details>
-  <div style="margin-top:30px"><a class="btn" href="#lid">Registreer en meet vandaag</a></div>
+  <details><summary>Voor bureaus, platforms en verenigingen</summary><p>Partners bieden hun professionals de ontwikkelstructuur aan en controleren registraties bij voordracht en verlenging, met toestemming van de professional. Verenigingen krijgen een eigen hoofdstuk in de Zelfstarter Index, over hun leden als groep. Mail naar partners@zelfstarters.nl.</p></details>
+  <div style="margin-top:30px"><a class="btn" href="#start">Registreer je gratis</a></div>
 </section>
 
 <footer>
