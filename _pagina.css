@@ -1,0 +1,30 @@
+:root{--navy:#0f1f3d;--ink:#121826;--muted:#5b6478;--paper:#f6f4ef;--white:#fff;--orange:#ff6a2b;--orange-dark:#e2561c;--sand:#f1e9db;--line:#e3dfd6}
+*{box-sizing:border-box}
+body{margin:0;font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+h1,h2,h3{font-family:Outfit,system-ui,sans-serif;line-height:1.08;margin:0 0 .45em;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800}
+h2{font-size:1.35rem;font-weight:700;margin-top:1.8em}
+p{margin:0 0 1em}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 60px}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0 10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:Outfit,sans-serif;font-weight:800;font-size:1.25rem}
+.brand small{display:block;font-family:Nunito,sans-serif;font-weight:600;font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+nav{white-space:nowrap}
+nav a{margin-left:22px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.kicker{display:inline-block;color:var(--orange);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;margin:40px 0 14px}
+.lead{font-size:1.2rem;color:var(--muted);max-width:620px}
+.stelling{font-family:Outfit,sans-serif;font-weight:700;font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--navy);margin:2em 0 .4em;line-height:1.2}
+.slot{background:var(--navy);color:#fff;border-radius:24px;padding:40px 44px;margin:50px 0 30px}
+.slot .stelling{color:#fff;margin:0 0 .3em}
+.slot p{color:#c9d2e6;margin:0}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:14px 26px;border-radius:14px;text-decoration:none;font-weight:700;font-family:Outfit,sans-serif;font-size:1.05rem}
+.btn:hover{background:var(--orange-dark)}
+.meta{color:var(--muted);font-size:.9rem;margin:6px 0 30px}
+.art{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px 26px;margin:14px 0}
+.art h2{margin:0 0 .4em;font-size:1.1rem}
+.art h2 span{color:var(--orange);margin-right:10px}
+.art p:last-child{margin-bottom:0}
+.art ul{margin:0 0 .6em;padding-left:20px}
+footer{padding:30px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:40px}
+footer a{color:var(--muted)}
+@media(max-width:700px){nav{display:none}.slot{padding:28px 24px}}
