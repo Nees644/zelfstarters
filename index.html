@@ -113,6 +113,13 @@ nav{white-space:nowrap}
 .stap h3{font-size:1.05rem;margin-bottom:6px}
 .stap p{font-size:.88rem;color:var(--muted);margin:0}
 .stap .tag{position:absolute;top:-11px;right:14px;background:var(--navy);color:#fff;font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.05em}
+.stap .tag.plus{background:var(--orange)}
+.stap div.plusrand{border-color:var(--orange)}
+.plusclass{background:var(--white);border:3px solid var(--orange);border-radius:28px;padding:48px 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.plusclass ol{padding-left:20px;margin:0}
+.plusclass li{margin:8px 0}
+.datum{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+@media(max-width:860px){.plusclass{grid-template-columns:1fr;padding:32px 24px}}
 .jaar{font-family:Outfit,sans-serif;font-weight:700;color:var(--navy);letter-spacing:.08em;margin-top:10px}
 .two{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;max-width:900px;margin-top:30px}
 @media(max-width:860px){.stap{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
@@ -124,7 +131,7 @@ nav{white-space:nowrap}
     <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0f1f3d"/><circle cx="20" cy="20" r="13" fill="#fff"/><circle cx="20" cy="20" r="8" fill="#ff6a2b"/><circle cx="20" cy="20" r="3" fill="#fff"/></svg>
     <span>Zelfstarters<small>De ontwikkelstructuur voor zelfstandige professionals</small></span>
   </a>
-  <nav><a href="#structuur">De structuur</a><a href="#register">Het register</a><a href="#check">Controleer</a><a href="/manifest">Manifest</a><a href="#vragen">Vragen</a><a class="btn" href="#start" style="padding:10px 18px;font-size:.95rem;margin-left:24px">Registreer gratis</a></nav>
+  <nav><a href="#structuur">De structuur</a><a href="#register">Het register</a><a href="#plusclass">Plus Class</a><a href="#check">Controleer</a><a href="/manifest">Manifest</a><a href="#vragen">Vragen</a><a class="btn" href="#start" style="padding:10px 18px;font-size:.95rem;margin-left:24px">Registreer gratis</a></nav>
 </header>
 
 <section class="hero" style="padding-top:60px">
@@ -169,7 +176,7 @@ nav{white-space:nowrap}
   <div class="stap">
     <div class="gratis"><span class="tag">Gratis</span><div class="n">1</div><h3>Meten</h3><p>De Zelfkracht Scan, tien minuten, vandaag. Langs Zien, Sturen en Doen.</p></div>
     <div class="gratis"><span class="tag">Gratis</span><div class="n">2</div><h3>Weten</h3><p>Je sterkste kant en je twee ontwikkelpunten, in gewone taal. Plus je nummer in het register.</p></div>
-    <div><div class="n">3</div><h3>Plannen</h3><p>Je als-dan plan: wat doe je in het eerste gesprek, de eerste honderd dagen, de evaluatie, de verlenging.</p></div>
+    <div class="plusrand"><span class="tag plus">Plus Class</span><div class="n">3</div><h3>Plannen</h3><p>Je als-dan plan: wat doe je in het eerste gesprek, de eerste honderd dagen, de evaluatie, de verlenging. Zelf, of in één dag live met de <a href="#plusclass" style="color:var(--orange);font-weight:700">Plus Class</a>.</p></div>
     <div><div class="n">4</div><h3>Doen</h3><p>Op die momenten een herinnering aan je plan, zodat je doet wat je je had voorgenomen.</p></div>
     <div><div class="n">5</div><h3>Groeien</h3><p>Na een jaar de hermeting. Je groei krijgt een naam: In beweging, Groeier of Sprong.</p></div>
     <div><div class="n">6</div><h3>Laten zien</h3><p>Je badge met jaartallen en groeiniveau, controleerbaar door elke opdrachtgever.</p></div>
@@ -220,6 +227,34 @@ nav{white-space:nowrap}
     </div>
   </div>
   <p class="muted" style="margin-top:18px;max-width:640px">Je kiest je jaar na je eerste meting, op je uitslagpagina. Wie voor 31 december geverifieerd is, draagt 2026 als eerste jaartal. Dat jaartal is er later niet meer.</p>
+</section>
+
+<section id="plusclass">
+  <div class="plusclass">
+    <div>
+      <span class="kicker" style="color:var(--orange);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem">Plus Class</span>
+      <h2>Eén dag. Je ontwikkelpunten worden je plan.</h2>
+      <p class="muted">Een als-dan plan maken is één ding. Het maken met een gedragsexpert naast je en acht vakgenoten die hetzelfde doen, is iets anders. De Plus Class is een dag live in Zaltbommel waarop je meting je persoonlijke ontwikkelplan wordt.</p>
+      <ol>
+        <li><b>Je meting gelezen.</b> Wat je sterkste kant is, waar je ruimte zit, en wat dat betekent in een opdracht.</li>
+        <li><b>Je momenten gekozen.</b> Het eerste gesprek, de eerste honderd dagen, de evaluatie, de verlenging: welk gedrag op welk moment.</li>
+        <li><b>Je plan vastgelegd.</b> Als-dan, concreet, met de herinneringen ingesteld voor de momenten die ertoe doen.</li>
+        <li><b>Je verhaal geoefend.</b> Hoe je dit vertelt aan een opdrachtgever, zonder dat het een cv-regel wordt.</li>
+      </ol>
+      <p class="muted" style="margin-top:16px">Daarna de plus op je badge. En bij je hermeting over een jaar zie je of het heeft gewerkt.</p>
+      <a class="btn" href="#start">Begin met je gratis meting</a>
+    </div>
+    <div class="card" style="background:var(--sand);border-radius:24px;padding:28px">
+      <h3>Data en prijs</h3>
+      <div class="datum"><span><b>vr 15 januari</b></span><span class="muted">Zaltbommel</span></div>
+      <div class="datum"><span><b>za 16 januari</b></span><span class="muted">Zaltbommel</span></div>
+      <div class="datum"><span><b>vr 22 januari</b></span><span class="muted">Zaltbommel</span></div>
+      <div class="datum"><span><b>za 23 januari</b></span><span class="muted">Zaltbommel</span></div>
+      <p class="muted" style="font-size:.9rem;margin:12px 0 0">Vijftien plekken per dag. Je kiest je dag na je meting.</p>
+      <div style="font-family:Outfit,sans-serif;font-weight:800;font-size:2.2rem;color:var(--navy);margin-top:18px">€ 299</div>
+      <div class="muted" style="font-size:.9rem">je jaar in de ontwikkelstructuur plus de dag, eerste jaar, excl. btw<br>+ € 62,79 btw = € 361,79 · founding-tarief tot 31 december</div>
+    </div>
+  </div>
 </section>
 
 <section id="check">
