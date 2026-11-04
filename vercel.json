@@ -1,1 +1,1 @@
-{ "cleanUrls": true, "rewrites": [{ "source": "/check", "destination": "/index.html" }] }
+{ "cleanUrls": true }
