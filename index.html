@@ -273,6 +273,14 @@ nav{white-space:nowrap}
       </form>
       <div id="checkuit" class="muted" style="font-size:.95rem;margin-top:12px"></div>
       <script>
+      // zelfstarters.nl/check?nummer=ZS-2026-00001 opent de controle met het nummer ingevuld.
+      (function(){
+        const nr = new URLSearchParams(location.search).get("nummer");
+        if (location.pathname.replace(/\/$/, "") === "/check" || nr){
+          if (nr) document.getElementById("checkq").value = nr.toUpperCase();
+          setTimeout(function(){ document.getElementById("check").scrollIntoView(); if (nr) document.getElementById("checkform").requestSubmit(); }, 50);
+        }
+      })();
       document.getElementById("checkform").addEventListener("submit", async function(e){
         e.preventDefault();
         const q = document.getElementById("checkq").value.trim(); const uit = document.getElementById("checkuit");
@@ -281,9 +289,9 @@ nav{white-space:nowrap}
           const r = await fetch("https://scan.happly.nl/api/zelfstarters-check?q=" + encodeURIComponent(q));
           const d = await r.json();
           if (!d.gevonden){ uit.textContent = "Geen registratie gevonden. Controleer het nummer of de exacte naam."; return; }
-          const kop = d.toestand === "geldig" ? "Geverifieerd" : d.toestand === "geregistreerd" ? "Geregistreerd, nog niet geverifieerd" : d.toestand === "niet actief" ? "Niet actief" : "Wacht op de eerste meting";
+          const kop = d.toestand === "geldig" ? (d.plus ? "Geverifieerd · Plus" : "Geverifieerd") : d.toestand === "geregistreerd" ? "Geregistreerd, nog niet geverifieerd" : d.toestand === "niet actief" ? "Niet actief" : "Wacht op de eerste meting";
           const kleur = d.geldig ? "var(--navy)" : (d.toestand === "geregistreerd" ? "var(--muted)" : "#b23b0a");
-          uit.innerHTML = '<b style="color:' + kleur + '">' + kop + '</b> · ' + d.nummer + (d.naam ? " · " + d.naam : "") + (d.plus ? " · Plus" : "") + (d.meetjaren && d.meetjaren.length ? " · " + d.meetjaren.join(" · ") : "") + ' · <a href="' + d.pagina + '" style="color:var(--navy)">bekijk</a>';
+          uit.innerHTML = '<b style="color:' + kleur + '">' + kop + '</b> · ' + d.nummer + (d.naam ? " · " + d.naam : "") + (d.meetjaren && d.meetjaren.length ? " · " + d.meetjaren.join(" · ") : "") + ' · <a href="' + d.pagina + '" style="color:var(--navy)">bekijk</a>';
         }catch(err){ uit.textContent = "De controle is even niet bereikbaar. Probeer het zo nog eens."; }
       });
       </script>
