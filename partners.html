@@ -95,5 +95,17 @@ td:first-child{font-weight:700;width:34%}
   <span><a href="/manifest">Manifest</a> · <a href="/reglement">Reglement</a> · <a href="/partners">Partners</a> · Een initiatief van Happly</span>
 </footer>
 </div>
+<script>
+(function(){
+  // Terug van Mollie na het betalen van een tegoed.
+  const code = (new URLSearchParams(location.search).get("tegoed") || "").replace(/[^A-Z0-9-]/gi, "").toUpperCase();
+  if (!code) return;
+  const h = document.querySelector("h1"); if (!h) return;
+  const d = document.createElement("div");
+  d.style.cssText = "background:#0f1f3d;color:#fff;border-radius:18px;padding:20px 24px;margin:0 0 24px;font-size:1.05rem";
+  d.innerHTML = "Dank je. Zodra de betaling binnen is, werkt code <b style=\"color:#ff6a2b\">" + code + "</b> en staan de code, de link voor je mensen en de factuur in je mail.";
+  h.parentNode.insertBefore(d, h);
+})();
+</script>
 </body>
 </html>
